@@ -24,9 +24,14 @@ describe('StringCalculatorComponent', () => {
   });
 
   it('should return zero when input is empty', () => {
-  
     const number = component.Add('');
   
     expect(number).toEqual(0);
+  });
+
+  it('should return 1 when input is 1', () => {
+    const number = component.Add('1');
+    
+    expect(number).toEqual(1);
   });
 });
