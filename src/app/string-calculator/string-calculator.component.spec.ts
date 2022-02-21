@@ -22,4 +22,11 @@ describe('StringCalculatorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should return zero when input is empty', () => {
+  
+    const number = component.Add('');
+  
+    expect(number).toEqual(0);
+  });
 });

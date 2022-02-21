@@ -12,4 +12,7 @@ export class StringCalculatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  Add(input: string): number{
+    return 0;
+  }
 }
